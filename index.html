@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — PDF Tools</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.65; margin: 0 auto; max-width: 760px; padding: 32px 20px 80px;
+    color: #1a1f26; background: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6ebf2; background: #10141a; }
+    code { background: #1c232c; }
+    hr { border-color: #2a323d; }
+  }
+  h1 { font-size: 1.8rem; margin-bottom: .2em; }
+  h2 { font-size: 1.25rem; margin-top: 2em; }
+  h3 { font-size: 1.05rem; margin-top: 1.6em; }
+  .updated { opacity: .7; font-size: .9rem; }
+  hr { margin: 3em 0; border: 0; border-top: 1px solid #d7dde5; }
+  ul { padding-left: 1.2em; }
+  a { color: #2f5d8c; }
+  @media (prefers-color-scheme: dark) { a { color: #88b0da; } }
+  code { background: #f0f3f7; padding: .1em .35em; border-radius: 4px; font-size: .9em; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="updated">Application: <strong>PDF Tools</strong> (package <code>com.kont.pdftools</code>)<br>
+Last updated: 25 August 2026</p>
+
+<p>This policy explains what data the PDF Tools application handles. It is written to
+match the actual behaviour of the app, not a generic template.</p>
+
+<h2>1. Data the developer collects</h2>
+<p><strong>None.</strong> The app has no accounts, no sign-in, no servers and no analytics
+belonging to the developer. Nothing you do in the app is sent to the developer.</p>
+
+<h2>2. Your documents</h2>
+<p>This is the most important section of this policy, so it is stated plainly:</p>
+<p><strong>Your PDF files and images are never uploaded anywhere.</strong> Every operation —
+merging, splitting, editing pages, compressing, creating PDFs from images, reading,
+extracting text, signing, adding or removing a password, and watermarking — is performed
+entirely on your device.</p>
+<p>The developer never receives your files, their contents, their names, or any
+information about them.</p>
+
+<h3>How the app reaches your files</h3>
+<p>The app requests <strong>no storage permission</strong>. Files are opened through
+Android's own document picker (the Storage Access Framework), which means the app can
+only ever see the specific file or files you choose to hand it. It cannot browse your
+storage, and it cannot open anything you did not select.</p>
+
+<h3>Temporary working copies</h3>
+<p>While an operation is running, the app writes temporary working copies into its own
+private cache directory on your device. These are removed by the app, and are in any
+case deleted when you uninstall the app or clear its data from Android Settings. They
+are never transmitted.</p>
+
+<h3>Text recognition (OCR)</h3>
+<p>When you extract text from a scanned page, the app uses Google ML Kit text
+recognition. The recognition model is <strong>bundled inside the app</strong> rather than
+downloaded, and it runs on your device. Page images are not sent to Google or to anyone
+else for recognition.</p>
+
+<h2>3. Data stored on your device</h2>
+<p>The app stores two small values locally, in its own private storage:</p>
+<ul>
+  <li>a counter of how many times the app has been opened (used to keep the first
+      sessions advertisement-free),</li>
+  <li>whether the one-time Pro purchase is owned, so that Pro keeps working offline.</li>
+</ul>
+<p>These never leave your device. They are deleted when you uninstall the app or clear
+its data from Android Settings.</p>
+
+<h2>4. Advertising (Google AdMob)</h2>
+<p>The free version of the app shows advertisements supplied by Google AdMob: a banner
+on the home screen, an occasional full-screen advertisement after an operation has
+finished, and an optional rewarded video that you may choose to watch to unlock a Pro
+tool once. To serve ads, the Google Mobile Ads SDK may collect and process:</p>
+<ul>
+  <li>advertising identifier (Android Advertising ID) and other device identifiers,</li>
+  <li>approximate location derived from your IP address,</li>
+  <li>device information (model, operating system, language, screen size),</li>
+  <li>ad interaction data (whether an ad was shown, viewed or clicked).</li>
+</ul>
+<p>This processing is carried out by Google as an independent controller/processor
+under its own terms. See
+<a href="https://policies.google.com/technologies/partner-sites">How Google uses information
+from sites or apps that use our services</a> and the
+<a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<p>Advertising requires an internet connection. The PDF work itself does not, and
+continues to function with no connection at all.</p>
+<p>If you purchase Pro, advertising is switched off completely.</p>
+
+<h3>Consent in the EEA, UK and Switzerland</h3>
+<p>If you are in a region where consent is required, the app shows a Google-certified
+consent screen (Google User Messaging Platform) the first time it runs. You can accept
+or refuse personalised advertising there. If consent is not given, the app still works
+in full; only the advertising behaviour changes.</p>
+
+<h3>Controlling advertising on your device</h3>
+<p>You can reset or delete your advertising identifier at any time:
+<em>Android Settings → Privacy → Ads</em> (menu names vary by manufacturer).</p>
+
+<h2>5. Purchases (Google Play Billing)</h2>
+<p>Pro is a single one-time purchase. The purchase is handled entirely by Google Play.
+The developer never sees your payment details — no card number, no billing address, no
+name. The app only asks Google Play whether this Google account owns the product, and
+stores the yes/no answer on your device so that Pro continues to work offline.</p>
+<p>Google's handling of the transaction is covered by the
+<a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+<h2>6. Permissions</h2>
+<p>The app itself requests no sensitive permissions. It does not access your camera,
+microphone, location, contacts, SMS or call history, and it does not request storage
+permission.</p>
+<p>The following permissions appear in the app's manifest. The billing permission is
+required to offer the one-time purchase; the rest are declared by the Google Mobile Ads
+SDK: internet access, network state, advertising ID and Android Ad Services permissions,
+wake lock and foreground service (declared by the SDK's internal scheduling library).
+None of them are used by the PDF features.</p>
+
+<h2>7. Children</h2>
+<p>The app is a general-purpose tool and is not directed at children under 13. The
+developer does not knowingly collect any data from children.</p>
+
+<h2>8. Data deletion</h2>
+<p>Because the developer holds no data about you, there is nothing to request deletion
+of. To remove everything the app stored on your device, uninstall the app or use
+<em>Settings → Apps → PDF Tools → Storage → Clear data</em>. Files you saved yourself
+stay where you saved them, and are yours to delete.</p>
+
+<h2>9. Changes to this policy</h2>
+<p>If the app's data behaviour changes, this page will be updated and the date above
+will change.</p>
+
+<h2>10. Contact</h2>
+<p>Questions about this policy: <strong>konttechnology@gmail.com</strong></p>
+
+<hr>
+
+<h1>Gizlilik Politikası</h1>
+<p class="updated">Uygulama: <strong>PDF Tools</strong> (paket <code>com.kont.pdftools</code>)<br>
+Son güncelleme: 25 Ağustos 2026</p>
+
+<p>Bu politika, PDF Tools uygulamasının hangi verileri işlediğini açıklar. Metin,
+uygulamanın gerçek davranışına göre yazılmıştır.</p>
+
+<h2>1. Geliştiricinin topladığı veriler</h2>
+<p><strong>Hiçbiri.</strong> Uygulamada hesap, giriş, sunucu veya geliştiriciye ait
+analitik bulunmaz. Uygulamada yaptığınız hiçbir şey geliştiriciye gönderilmez.</p>
+
+<h2>2. Belgeleriniz</h2>
+<p>Bu politikanın en önemli bölümü olduğu için açıkça yazıyoruz:</p>
+<p><strong>PDF dosyalarınız ve resimleriniz hiçbir yere yüklenmez.</strong> Birleştirme,
+bölme, sayfa düzenleme, sıkıştırma, resimden PDF oluşturma, okuma, metin çıkarma,
+imzalama, parola ekleme veya kaldırma ve filigran ekleme dahil bütün işlemler tamamen
+cihazınızda yapılır.</p>
+<p>Geliştirici dosyalarınızı, içeriklerini, adlarını veya onlara dair herhangi bir
+bilgiyi hiçbir zaman almaz.</p>
+
+<h3>Uygulama dosyalarınıza nasıl ulaşır</h3>
+<p>Uygulama <strong>depolama izni istemez</strong>. Dosyalar Android'in kendi belge
+seçicisiyle (Storage Access Framework) açılır; yani uygulama yalnızca sizin seçip
+verdiğiniz dosyayı görebilir. Depolamanızda gezinemez ve seçmediğiniz hiçbir şeyi
+açamaz.</p>
+
+<h3>Geçici çalışma kopyaları</h3>
+<p>Bir işlem sürerken uygulama, cihazınızdaki kendi özel önbellek klasörüne geçici
+çalışma kopyaları yazar. Bu kopyalar uygulama tarafından silinir; her hâlükârda
+uygulamayı kaldırdığınızda veya verilerini temizlediğinizde yok olur. Hiçbir zaman
+gönderilmez.</p>
+
+<h3>Metin tanıma (OCR)</h3>
+<p>Taranmış bir sayfadan metin çıkardığınızda uygulama Google ML Kit metin tanımayı
+kullanır. Tanıma modeli indirilmez, <strong>uygulamanın içinde gelir</strong> ve
+cihazınızda çalışır. Sayfa görüntüleri tanıma için Google'a veya başka birine
+gönderilmez.</p>
+
+<h2>3. Cihazınızda saklanan veriler</h2>
+<p>Uygulama, yalnızca kendi özel alanında iki küçük değer saklar:</p>
+<ul>
+  <li>uygulamanın kaç kez açıldığı (ilk oturumların reklamsız olması için),</li>
+  <li>tek seferlik Pro satın almasının sizde olup olmadığı (Pro'nun çevrimdışı da
+      çalışması için).</li>
+</ul>
+<p>Bu veriler cihazınızdan çıkmaz. Uygulamayı kaldırdığınızda veya verilerini
+temizlediğinizde silinir.</p>
+
+<h2>4. Reklamlar (Google AdMob)</h2>
+<p>Uygulamanın ücretsiz sürümü Google AdMob tarafından sağlanan reklamlar gösterir:
+ana ekranda bir banner, bir işlem bittikten sonra ara sıra tam ekran bir reklam ve
+isterseniz izleyebileceğiniz, bir Pro aracı tek seferlik açan ödüllü bir video.
+Reklam sunmak için Google Mobile Ads SDK'sı şunları işleyebilir:</p>
+<ul>
+  <li>reklam kimliği (Android Advertising ID) ve diğer cihaz tanımlayıcıları,</li>
+  <li>IP adresinden türetilen yaklaşık konum,</li>
+  <li>cihaz bilgileri (model, işletim sistemi, dil, ekran boyutu),</li>
+  <li>reklam etkileşim verileri (reklamın gösterilmesi, görüntülenmesi, tıklanması).</li>
+</ul>
+<p>Bu işleme Google tarafından kendi koşulları kapsamında yapılır. Ayrıntılar:
+<a href="https://policies.google.com/technologies/partner-sites">Google'ın hizmetlerini
+kullanan uygulamalardan gelen bilgileri nasıl kullandığı</a> ve
+<a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a>.</p>
+<p>Reklamlar internet bağlantısı gerektirir. PDF işlerinin kendisi gerektirmez ve
+bağlantı hiç yokken de tam olarak çalışır.</p>
+<p>Pro satın alırsanız reklamlar tamamen kapanır.</p>
+
+<h3>AEA, Birleşik Krallık ve İsviçre'de onay</h3>
+<p>Onayın zorunlu olduğu bölgelerdeyseniz, uygulama ilk açılışta Google sertifikalı
+bir onay ekranı (Google User Messaging Platform) gösterir. Kişiselleştirilmiş reklamı
+buradan kabul edebilir veya reddedebilirsiniz. Onay verilmese de uygulama tam olarak
+çalışır; yalnızca reklam davranışı değişir.</p>
+
+<h3>Reklam kimliğini yönetme</h3>
+<p>Reklam kimliğinizi istediğiniz zaman sıfırlayabilir veya silebilirsiniz:
+<em>Ayarlar → Gizlilik → Reklamlar</em> (menü adları üreticiye göre değişebilir).</p>
+
+<h2>5. Satın alma (Google Play Billing)</h2>
+<p>Pro, tek seferlik bir satın almadır. Satın alma tamamen Google Play tarafından
+yürütülür. Geliştirici ödeme bilgilerinizi hiçbir zaman görmez — kart numarası,
+fatura adresi, isim, hiçbiri. Uygulama yalnızca Google Play'e "bu Google hesabı bu
+ürüne sahip mi" diye sorar ve evet/hayır cevabını, Pro'nun çevrimdışı da çalışması
+için cihazınızda saklar.</p>
+<p>Google'ın işlemi nasıl yürüttüğü
+<a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a>
+kapsamındadır.</p>
+
+<h2>6. İzinler</h2>
+<p>Uygulamanın kendisi hassas izin istemez. Kameranıza, mikrofonunuza, konumunuza,
+rehberinize, SMS'lerinize veya arama geçmişinize erişmez; depolama izni de istemez.</p>
+<p>Manifestte şu izinler görünür: faturalandırma izni tek seferlik satın almayı sunmak
+için gereklidir; geri kalanlar Google Mobile Ads SDK'sı tarafından tanımlanır — internet
+erişimi, ağ durumu, reklam kimliği, Android Ad Services izinleri, wake lock ve
+foreground service (SDK'nın kendi zamanlama kütüphanesi tanımlar). Bunların hiçbiri PDF
+işlevleri tarafından kullanılmaz.</p>
+
+<h2>7. Çocuklar</h2>
+<p>Uygulama genel amaçlı bir araçtır ve 13 yaş altı çocuklara yönelik değildir.
+Geliştirici, çocuklardan bilerek veri toplamaz.</p>
+
+<h2>8. Verilerin silinmesi</h2>
+<p>Geliştirici hakkınızda hiçbir veri tutmadığı için silinmesi gereken bir kayıt yoktur.
+Uygulamanın cihazınızda sakladığı her şeyi kaldırmak için uygulamayı silin veya
+<em>Ayarlar → Uygulamalar → PDF Tools → Depolama → Verileri temizle</em> yolunu izleyin.
+Kendi kaydettiğiniz dosyalar kaydettiğiniz yerde kalır; onları silmek size aittir.</p>
+
+<h2>9. Değişiklikler</h2>
+<p>Uygulamanın veri davranışı değişirse bu sayfa güncellenir ve yukarıdaki tarih
+değişir.</p>
+
+<h2>10. İletişim</h2>
+<p>Bu politikayla ilgili sorular: <strong>konttechnology@gmail.com</strong></p>
+
+</body>
+</html>
