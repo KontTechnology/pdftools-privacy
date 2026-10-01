@@ -31,7 +31,7 @@
 
 <h1>Privacy Policy</h1>
 <p class="updated">Application: <strong>PDF Tools</strong> (package <code>com.kont.pdftools</code>)<br>
-Last updated: 25 August 2026</p>
+Last updated: 1 October 2026</p>
 
 <p>This policy explains what data the PDF Tools application handles. It is written to
 match the actual behaviour of the app, not a generic template.</p>
@@ -44,7 +44,7 @@ belonging to the developer. Nothing you do in the app is sent to the developer.<
 <p>This is the most important section of this policy, so it is stated plainly:</p>
 <p><strong>Your PDF files and images are never uploaded anywhere.</strong> Every operation —
 merging, splitting, editing pages, compressing, creating PDFs from images, reading,
-extracting text, signing, adding or removing a password, and watermarking — is performed
+searching inside a document, extracting text, signing, adding or removing a password, and watermarking — is performed
 entirely on your device.</p>
 <p>The developer never receives your files, their contents, their names, or any
 information about them.</p>
@@ -67,11 +67,30 @@ recognition. The recognition model is <strong>bundled inside the app</strong> ra
 downloaded, and it runs on your device. Page images are not sent to Google or to anyone
 else for recognition.</p>
 
+<h3>Document scanner</h3>
+<p>The scan feature uses the Google ML Kit document scanner, which is provided by
+Google Play services. The camera screen you see while scanning belongs to Google Play
+services, not to this app; the app itself has no camera permission and never accesses
+the camera. Google Play services may download the scanner module the first time you
+use it. Scanning and page processing happen on your device, and the app only receives
+the finished PDF, which you then save wherever you choose. As with all Google Play
+services components, Google may collect basic diagnostic and usage information under
+its own terms (see the <a href="https://policies.google.com/privacy">Google Privacy
+Policy</a>); your scanned pages are not sent to the developer.</p>
+
 <h2>3. Data stored on your device</h2>
-<p>The app stores two small values locally, in its own private storage:</p>
+<p>The app stores the following small values locally, in its own private storage:</p>
 <ul>
+  <li>a <strong>recent files list</strong>: the names of the last documents you opened,
+      when you opened them, and a reference to each file so it can be reopened with one
+      tap. For this, the app keeps Android's read access to those specific files until
+      they drop off the list;</li>
+  <li><strong>bookmarks</strong>: the page numbers you bookmarked in each document;</li>
   <li>a counter of how many times the app has been opened (used to keep the first
-      sessions advertisement-free),</li>
+      sessions advertisement-free);</li>
+  <li>a daily counter of how many times the rewarded-ad fallback was used today;</li>
+  <li>a counter of completed operations and whether you have already been asked to
+      rate the app, so that the rating prompt appears at most once;</li>
   <li>whether the one-time Pro purchase is owned, so that Pro keeps working offline.</li>
 </ul>
 <p>These never leave your device. They are deleted when you uninstall the app or clear
@@ -118,7 +137,8 @@ stores the yes/no answer on your device so that Pro continues to work offline.</
 <h2>6. Permissions</h2>
 <p>The app itself requests no sensitive permissions. It does not access your camera,
 microphone, location, contacts, SMS or call history, and it does not request storage
-permission.</p>
+permission. (The document scanner's camera is run by Google Play services, as described
+in section 2.)</p>
 <p>The following permissions appear in the app's manifest. The billing permission is
 required to offer the one-time purchase; the rest are declared by the Google Mobile Ads
 SDK: internet access, network state, advertising ID and Android Ad Services permissions,
@@ -146,7 +166,7 @@ will change.</p>
 
 <h1>Gizlilik Politikası</h1>
 <p class="updated">Uygulama: <strong>PDF Tools</strong> (paket <code>com.kont.pdftools</code>)<br>
-Son güncelleme: 25 Ağustos 2026</p>
+Son güncelleme: 1 Ekim 2026</p>
 
 <p>Bu politika, PDF Tools uygulamasının hangi verileri işlediğini açıklar. Metin,
 uygulamanın gerçek davranışına göre yazılmıştır.</p>
@@ -158,7 +178,7 @@ analitik bulunmaz. Uygulamada yaptığınız hiçbir şey geliştiriciye gönder
 <h2>2. Belgeleriniz</h2>
 <p>Bu politikanın en önemli bölümü olduğu için açıkça yazıyoruz:</p>
 <p><strong>PDF dosyalarınız ve resimleriniz hiçbir yere yüklenmez.</strong> Birleştirme,
-bölme, sayfa düzenleme, sıkıştırma, resimden PDF oluşturma, okuma, metin çıkarma,
+bölme, sayfa düzenleme, sıkıştırma, resimden PDF oluşturma, okuma, belge içinde arama, metin çıkarma,
 imzalama, parola ekleme veya kaldırma ve filigran ekleme dahil bütün işlemler tamamen
 cihazınızda yapılır.</p>
 <p>Geliştirici dosyalarınızı, içeriklerini, adlarını veya onlara dair herhangi bir
@@ -182,10 +202,29 @@ kullanır. Tanıma modeli indirilmez, <strong>uygulamanın içinde gelir</strong
 cihazınızda çalışır. Sayfa görüntüleri tanıma için Google'a veya başka birine
 gönderilmez.</p>
 
+<h3>Belge tarayıcı</h3>
+<p>Tarama özelliği, Google Play Hizmetleri tarafından sağlanan Google ML Kit belge
+tarayıcısını kullanır. Tarama sırasında gördüğünüz kamera ekranı bu uygulamaya değil,
+Google Play Hizmetleri'ne aittir; uygulamanın kendisinin kamera izni yoktur ve kameraya
+hiç erişmez. Google Play Hizmetleri, tarayıcı modülünü ilk kullanımda indirebilir.
+Tarama ve sayfa işleme cihazınızda yapılır; uygulama yalnızca bitmiş PDF'i alır ve siz
+onu istediğiniz yere kaydedersiniz. Tüm Google Play Hizmetleri bileşenlerinde olduğu
+gibi Google, kendi koşulları kapsamında temel tanılama ve kullanım bilgileri toplayabilir
+(bkz. <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a>);
+taranan sayfalarınız geliştiriciye gönderilmez.</p>
+
 <h2>3. Cihazınızda saklanan veriler</h2>
-<p>Uygulama, yalnızca kendi özel alanında iki küçük değer saklar:</p>
+<p>Uygulama, yalnızca kendi özel alanında şu küçük değerleri saklar:</p>
 <ul>
-  <li>uygulamanın kaç kez açıldığı (ilk oturumların reklamsız olması için),</li>
+  <li><strong>son kullanılan dosyalar listesi</strong>: son açtığınız belgelerin adları,
+      ne zaman açıldıkları ve tek dokunuşla yeniden açılabilmeleri için her dosyaya bir
+      başvuru. Bunun için uygulama, yalnızca o dosyalar listede kaldığı sürece Android'in
+      verdiği okuma iznini korur;</li>
+  <li><strong>yer imleri</strong>: her belgede işaretlediğiniz sayfa numaraları;</li>
+  <li>uygulamanın kaç kez açıldığı (ilk oturumların reklamsız olması için);</li>
+  <li>ödüllü reklam yedeğinin bugün kaç kez kullanıldığı (günlük sayaç);</li>
+  <li>tamamlanan işlem sayısı ve size daha önce puan sorulup sorulmadığı (puan
+      penceresinin en fazla bir kez çıkması için);</li>
   <li>tek seferlik Pro satın almasının sizde olup olmadığı (Pro'nun çevrimdışı da
       çalışması için).</li>
 </ul>
@@ -233,7 +272,9 @@ kapsamındadır.</p>
 
 <h2>6. İzinler</h2>
 <p>Uygulamanın kendisi hassas izin istemez. Kameranıza, mikrofonunuza, konumunuza,
-rehberinize, SMS'lerinize veya arama geçmişinize erişmez; depolama izni de istemez.</p>
+rehberinize, SMS'lerinize veya arama geçmişinize erişmez; depolama izni de istemez.
+(Belge tarayıcının kamerasını, 2. bölümde anlatıldığı gibi Google Play Hizmetleri
+çalıştırır.)</p>
 <p>Manifestte şu izinler görünür: faturalandırma izni tek seferlik satın almayı sunmak
 için gereklidir; geri kalanlar Google Mobile Ads SDK'sı tarafından tanımlanır — internet
 erişimi, ağ durumu, reklam kimliği, Android Ad Services izinleri, wake lock ve
