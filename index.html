@@ -31,7 +31,7 @@
 
 <h1>Privacy Policy</h1>
 <p class="updated">Application: <strong>PDF Tools</strong> (package <code>com.kont.pdftools</code>)<br>
-Last updated: 1 October 2026</p>
+Last updated: 23 October 2026</p>
 
 <p>This policy explains what data the PDF Tools application handles. It is written to
 match the actual behaviour of the app, not a generic template.</p>
@@ -44,7 +44,7 @@ belonging to the developer. Nothing you do in the app is sent to the developer.<
 <p>This is the most important section of this policy, so it is stated plainly:</p>
 <p><strong>Your PDF files and images are never uploaded anywhere.</strong> Every operation —
 merging, splitting, editing pages, compressing, creating PDFs from images, reading,
-searching inside a document, extracting text, signing, adding or removing a password, and watermarking — is performed
+searching inside a document, reading aloud, highlighting and adding notes, extracting text, signing, adding or removing a password, and watermarking — is performed
 entirely on your device.</p>
 <p>The developer never receives your files, their contents, their names, or any
 information about them.</p>
@@ -54,6 +54,23 @@ information about them.</p>
 Android's own document picker (the Storage Access Framework), which means the app can
 only ever see the specific file or files you choose to hand it. It cannot browse your
 storage, and it cannot open anything you did not select.</p>
+<p>You can also open a PDF in the app from another app ("Open with") or share PDFs
+and images to it ("Share"). In that case the other app gives PDF Tools temporary read
+access to those files only. Files received this way are not added to the recent files
+list.</p>
+
+<h3>Read aloud</h3>
+<p>The read-aloud feature uses the text-to-speech engine installed on your device
+(for example Speech Services by Google), through Android's standard text-to-speech
+service. The app takes the text of the page being read from the document on your
+device and hands it to that engine; the app itself does not send the text anywhere.
+How the engine works is governed by its provider's own terms. Scanned pages have no
+text, so nothing is read from them.</p>
+
+<h3>Highlights, notes and printing</h3>
+<p>Highlights and notes are written into a new copy of the document on your device,
+as standard PDF annotations; the original file is not changed. Printing uses Android's
+own print service and the printer or "Save as PDF" option you choose there.</p>
 
 <h3>Temporary working copies</h3>
 <p>While an operation is running, the app writes temporary working copies into its own
@@ -86,15 +103,18 @@ Policy</a>); your scanned pages are not sent to the developer.</p>
       tap. For this, the app keeps Android's read access to those specific files until
       they drop off the list;</li>
   <li><strong>bookmarks</strong>: the page numbers you bookmarked in each document;</li>
-  <li>a counter of how many times the app has been opened (used to keep the first
-      sessions advertisement-free);</li>
+  <li>a counter of how many times the app has been opened (used to keep full-screen
+      advertisements out of the first sessions);</li>
   <li>a daily counter of how many times the rewarded-ad fallback was used today;</li>
   <li>a counter of completed operations and whether you have already been asked to
       rate the app, so that the rating prompt appears at most once;</li>
   <li>whether the one-time Pro purchase is owned, so that Pro keeps working offline.</li>
 </ul>
-<p>These never leave your device. They are deleted when you uninstall the app or clear
-its data from Android Settings.</p>
+<p>The developer cannot see any of these. The recent files list is excluded from
+Android's backup and device-to-device transfer; if Google backup is turned on for your
+phone, Android may include the other values above (for example Pro status and bookmarks)
+in your own backup in your Google account. They are deleted when you uninstall the app
+or clear its data from Android Settings.</p>
 
 <h2>4. Advertising (Google AdMob)</h2>
 <p>The free version of the app shows advertisements supplied by Google AdMob: a banner
@@ -119,8 +139,9 @@ continues to function with no connection at all.</p>
 <h3>Consent in the EEA, UK and Switzerland</h3>
 <p>If you are in a region where consent is required, the app shows a Google-certified
 consent screen (Google User Messaging Platform) the first time it runs. You can accept
-or refuse personalised advertising there. If consent is not given, the app still works
-in full; only the advertising behaviour changes.</p>
+or refuse personalised advertising there. You can change your choice later in the
+app's Settings under "Ad privacy options" (shown only where it applies). If consent is
+not given, the app still works in full; only the advertising behaviour changes.</p>
 
 <h3>Controlling advertising on your device</h3>
 <p>You can reset or delete your advertising identifier at any time:
@@ -142,8 +163,12 @@ in section 2.)</p>
 <p>The following permissions appear in the app's manifest. The billing permission is
 required to offer the one-time purchase; the rest are declared by the Google Mobile Ads
 SDK: internet access, network state, advertising ID and Android Ad Services permissions,
-wake lock and foreground service (declared by the SDK's internal scheduling library).
-None of them are used by the PDF features.</p>
+and wake lock. None of them are used by the PDF features. Read aloud uses the
+foreground service permissions (foreground service, media playback) so that reading can
+continue while the screen is off or another app is open; the service runs only while
+reading is in progress or paused, shows a notification with a Stop button, and stops as
+soon as you stop it, the last page ends or you remove the app from recent apps. Printing
+needs no permission.</p>
 
 <h2>7. Children</h2>
 <p>The app is a general-purpose tool and is not directed at children under 13. The
@@ -166,7 +191,7 @@ will change.</p>
 
 <h1>Gizlilik Politikası</h1>
 <p class="updated">Uygulama: <strong>PDF Tools</strong> (paket <code>com.kont.pdftools</code>)<br>
-Son güncelleme: 1 Ekim 2026</p>
+Son güncelleme: 23 Ekim 2026</p>
 
 <p>Bu politika, PDF Tools uygulamasının hangi verileri işlediğini açıklar. Metin,
 uygulamanın gerçek davranışına göre yazılmıştır.</p>
@@ -179,7 +204,7 @@ analitik bulunmaz. Uygulamada yaptığınız hiçbir şey geliştiriciye gönder
 <p>Bu politikanın en önemli bölümü olduğu için açıkça yazıyoruz:</p>
 <p><strong>PDF dosyalarınız ve resimleriniz hiçbir yere yüklenmez.</strong> Birleştirme,
 bölme, sayfa düzenleme, sıkıştırma, resimden PDF oluşturma, okuma, belge içinde arama, metin çıkarma,
-imzalama, parola ekleme veya kaldırma ve filigran ekleme dahil bütün işlemler tamamen
+sesli okuma, vurgulama ve not ekleme, imzalama, parola ekleme veya kaldırma ve filigran ekleme dahil bütün işlemler tamamen
 cihazınızda yapılır.</p>
 <p>Geliştirici dosyalarınızı, içeriklerini, adlarını veya onlara dair herhangi bir
 bilgiyi hiçbir zaman almaz.</p>
@@ -189,6 +214,22 @@ bilgiyi hiçbir zaman almaz.</p>
 seçicisiyle (Storage Access Framework) açılır; yani uygulama yalnızca sizin seçip
 verdiğiniz dosyayı görebilir. Depolamanızda gezinemez ve seçmediğiniz hiçbir şeyi
 açamaz.</p>
+<p>Bir PDF'i başka bir uygulamadan "Birlikte aç" ile açabilir ya da PDF ve resimleri
+uygulamaya "Paylaş" ile gönderebilirsiniz. Bu durumda diğer uygulama PDF Tools'a
+yalnızca o dosyalar için geçici okuma izni verir. Bu yolla gelen dosyalar son
+kullanılanlar listesine eklenmez.</p>
+
+<h3>Sesli okuma</h3>
+<p>Sesli okuma, cihazınızda kurulu metin okuma motorunu (örneğin Google Konuşma
+Hizmetleri) Android'in standart metin okuma hizmeti üzerinden kullanır. Uygulama,
+okunan sayfanın metnini cihazınızdaki belgeden alır ve bu motora verir; uygulamanın
+kendisi metni hiçbir yere göndermez. Motorun nasıl çalıştığı, sağlayıcısının kendi
+koşullarına tabidir. Taranmış sayfalarda metin olmadığı için okunacak bir şey yoktur.</p>
+
+<h3>Vurgular, notlar ve yazdırma</h3>
+<p>Vurgular ve notlar, belgenin cihazınızdaki yeni bir kopyasına standart PDF notları
+olarak yazılır; asıl dosya değişmez. Yazdırma, Android'in kendi yazdırma hizmetini ve
+orada seçtiğiniz yazıcıyı ya da "PDF olarak kaydet" seçeneğini kullanır.</p>
 
 <h3>Geçici çalışma kopyaları</h3>
 <p>Bir işlem sürerken uygulama, cihazınızdaki kendi özel önbellek klasörüne geçici
@@ -221,14 +262,17 @@ taranan sayfalarınız geliştiriciye gönderilmez.</p>
       başvuru. Bunun için uygulama, yalnızca o dosyalar listede kaldığı sürece Android'in
       verdiği okuma iznini korur;</li>
   <li><strong>yer imleri</strong>: her belgede işaretlediğiniz sayfa numaraları;</li>
-  <li>uygulamanın kaç kez açıldığı (ilk oturumların reklamsız olması için);</li>
+  <li>uygulamanın kaç kez açıldığı (ilk oturumlarda tam ekran reklam gösterilmemesi için);</li>
   <li>ödüllü reklam yedeğinin bugün kaç kez kullanıldığı (günlük sayaç);</li>
   <li>tamamlanan işlem sayısı ve size daha önce puan sorulup sorulmadığı (puan
       penceresinin en fazla bir kez çıkması için);</li>
   <li>tek seferlik Pro satın almasının sizde olup olmadığı (Pro'nun çevrimdışı da
       çalışması için).</li>
 </ul>
-<p>Bu veriler cihazınızdan çıkmaz. Uygulamayı kaldırdığınızda veya verilerini
+<p>Geliştirici bunların hiçbirini göremez. Son kullanılanlar listesi Android
+yedeğine ve cihazdan cihaza aktarıma dahil edilmez; telefonunuzda Google yedeklemesi
+açıksa Android yukarıdaki diğer değerleri (örneğin Pro durumu ve yer imleri) Google
+hesabınızdaki kendi yedeğinize ekleyebilir. Uygulamayı kaldırdığınızda veya verilerini
 temizlediğinizde silinir.</p>
 
 <h2>4. Reklamlar (Google AdMob)</h2>
@@ -253,8 +297,10 @@ bağlantı hiç yokken de tam olarak çalışır.</p>
 <h3>AEA, Birleşik Krallık ve İsviçre'de onay</h3>
 <p>Onayın zorunlu olduğu bölgelerdeyseniz, uygulama ilk açılışta Google sertifikalı
 bir onay ekranı (Google User Messaging Platform) gösterir. Kişiselleştirilmiş reklamı
-buradan kabul edebilir veya reddedebilirsiniz. Onay verilmese de uygulama tam olarak
-çalışır; yalnızca reklam davranışı değişir.</p>
+buradan kabul edebilir veya reddedebilirsiniz. Kararınızı daha sonra uygulamanın
+Ayarlar ekranındaki "Reklam gizlilik seçenekleri" ile değiştirebilirsiniz (yalnızca
+gerektiği bölgelerde görünür). Onay verilmese de uygulama tam olarak çalışır; yalnızca
+reklam davranışı değişir.</p>
 
 <h3>Reklam kimliğini yönetme</h3>
 <p>Reklam kimliğinizi istediğiniz zaman sıfırlayabilir veya silebilirsiniz:
@@ -277,9 +323,13 @@ rehberinize, SMS'lerinize veya arama geçmişinize erişmez; depolama izni de is
 çalıştırır.)</p>
 <p>Manifestte şu izinler görünür: faturalandırma izni tek seferlik satın almayı sunmak
 için gereklidir; geri kalanlar Google Mobile Ads SDK'sı tarafından tanımlanır — internet
-erişimi, ağ durumu, reklam kimliği, Android Ad Services izinleri, wake lock ve
-foreground service (SDK'nın kendi zamanlama kütüphanesi tanımlar). Bunların hiçbiri PDF
-işlevleri tarafından kullanılmaz.</p>
+erişimi, ağ durumu, reklam kimliği, Android Ad Services izinleri ve wake lock.
+Bunların hiçbiri PDF işlevleri tarafından kullanılmaz. Sesli okuma, ekran kapalıyken
+veya başka bir uygulama açıkken okumanın sürebilmesi için ön plan servisi izinlerini (ön
+plan servisi, medya oynatma) kullanır; servis yalnızca okuma sürerken veya duraklatılmışken
+çalışır, Durdur düğmeli bir bildirim gösterir ve siz durdurduğunuzda, son sayfa bittiğinde
+ya da uygulamayı son kullanılanlardan kaldırdığınızda hemen kapanır. Yazdırma izin
+gerektirmez.</p>
 
 <h2>7. Çocuklar</h2>
 <p>Uygulama genel amaçlı bir araçtır ve 13 yaş altı çocuklara yönelik değildir.
